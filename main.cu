@@ -33,7 +33,6 @@ int main(int argc, char** argv) {
         cudaMemcpyAsync(array, d_out,sizeof(int)*size,cudaMemcpyDeviceToHost);
         
         //print intermediate
-
         printf("intermediate sum:\n");
         for(int i = 0; i < size; i++) {
             printf("%d, ", array[i]);
